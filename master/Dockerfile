@@ -33,7 +33,7 @@ RUN mkdir -p /usr/local/src && cd /usr/local/src/ \
   && cp -rv Source/Python/wrappers/. ${BENTO4_INSTALL_DIR}/bin \
   && cp -rv Source/C++/**/*.h ${BENTO4_INSTALL_DIR}/include \
   && cd ${BENTO4_INSTALL_DIR} \
-  && rm -vrf /usr/local/src
+  && rm -rf /usr/local/src
 
 WORKDIR ${BENTO4_INSTALL_DIR}
 
